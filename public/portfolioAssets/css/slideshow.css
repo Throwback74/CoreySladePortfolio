@@ -1,0 +1,82 @@
+.brand-logo {
+  font-weight: 300 !important;
+  font-size: 30px;
+}
+
+#logo2 {
+  font-weight: 900;
+}
+
+.slide__title {
+  text-decoration: double;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.slide__subtitle {
+    color: #f9c060;
+    font-weight: 700;
+    text-decoration: double;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.slide__number {
+  text-decoration: double;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.gitIcon {
+  transform: rotate(180deg);
+}
+
+.content__title {
+  font-size: 60px !important;
+}
+
+.nextArrow, .nextArrowShadow {
+  transform: rotate(130deg);
+  font-size: 34px;
+  text-shadow: 0 0 10px rgb(94, 94, 245);
+}
+
+.nextArrow, .prevArrow {
+  color: black;
+}
+
+.prevArrow, .prevArrowShadow {
+  transform: rotate(310deg);
+  font-size: 34px;
+  text-shadow: 0 0 10px rgb(94, 94, 245);
+}
+
+.nextArrow, .prevArrow {
+  opacity: 0.85;                /* Opacity (Transparency) */
+  color: rgba(0, 0, 0, 0.85);   /* RGBA Color (Alternative Transparency) */
+  -webkit-filter: blur(2px);    /* Blur */
+  -moz-filter: blur(2px);
+  filter: blur(2px);
+}
+
+/*
+<filter id="shadow">
+<feDropShadow dx="4" dy="8" stdDeviation="4"/>
+</filter>
+
+					From Line 176  <svg class="icon icon--navarrow-prev">
+						<use xlink:href="#icon-navarrow"></use>
+					</svg>
+
+<polygon id="shadow" points="58.263,0.056 100,41.85 58.263,83.641 30.662,83.641 62.438,51.866 0,51.866 0,31.611 62.213,31.611 30.605,0 58.263,0.056" fill="#EEEEEE" filter="url(#dropshadow)">
+
+<set attributeName="fill-opacity" to="0.01" begin="arrow.mouseover" end="arrow.mouseout" />
+
+</polygon>
+
+Line 167 - 					<svg class="icon icon--navarrow-next">
+						<use xlink:href="#icon-navarrow"></use>
+					</svg>
+
+<!-- there is probably a better way to duplicate the points -->
+<polygon id="arrow" points="58.263,0.056 100,41.85 58.263,83.641 30.662,83.641 62.438,51.866 0,51.866 0,31.611 62.213,31.611 30.605,0 58.263,0.056" fill="#000090" onmouseover="evt.target.setAttribute('opacity', '0.5');
+evt.target.setAttribute('fill', '#aaaaaa');" onmouseout="evt.target.setAttribute('opacity','1)');
+evt.target.setAttribute('fill', '#000090');"
+/> */
