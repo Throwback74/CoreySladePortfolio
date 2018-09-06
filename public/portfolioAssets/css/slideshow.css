@@ -56,6 +56,73 @@
   filter: blur(2px);
 }
 
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 5em;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 21px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(35, 35, 35);
+  color: #1ab3de;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+
+.slideshow {
+  pointer-events: none;
+}
+
+#homelink {
+  float: left;
+}
+
+#closeBtn {
+  float: right;
+}
+
+#aboutLink {
+  display: block;
+  clear: both;
+}
+
+.homeCloseWrapper {
+  display: block;
+}
+
 /*
 <filter id="shadow">
 <feDropShadow dx="4" dy="8" stdDeviation="4"/>

@@ -130,6 +130,20 @@ a:focus {
 	fill: currentColor;
 }
 
+.icon--menu {
+	/* margin-left: 85px; */
+	position: absolute;
+	right: 3em;
+	top: 3em;
+}
+
+.icon--menu-alt {
+	/* margin-left: 55px; */
+	position: absolute;
+	right: 2.5em;
+	top: 3em;
+}
+
 /* Content */
 .content,
 .content__inner {

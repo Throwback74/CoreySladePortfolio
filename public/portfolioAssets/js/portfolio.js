@@ -590,4 +590,20 @@
     // Preload all the images in the page..
     const loader = document.querySelector('.loader');
     imagesLoaded(document.querySelectorAll('.slide__img'), {background: true}, () => document.body.classList.remove('loading'));
+
+
 }
+
+$(document).ready(function () {
+    $(".openbtn").click(function() {
+        // function openNav() {
+            $("#mySidepanel").css("width", "290px");
+        // }
+    })
+
+    $(".closebtn").click(function() {
+        // function closeNav() {
+            $("#mySidepanel").css("width", "0");
+        // }
+    })
+});

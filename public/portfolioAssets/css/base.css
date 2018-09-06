@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 body {
 	--color-text: #f1f1f1;
-    --color-bg: #0c0c0c;
+    --color-bg:rgb(35, 35, 35);
     --color-link: #1ab3de;
     --color-link-hover: #f1f1f1;
 	--color-deco: #141414;
@@ -133,9 +133,15 @@ a:focus {
 .codrops-links {
 	position: relative;
 	display: flex;
+	flex-direction: column;
+	flex-flow: column;
 	justify-content: flex-end;
 	align-items: center;
 	white-space: nowrap;
+}
+
+.sidepanel_link {
+	display: flex;
 }
 
 .github {
