@@ -2,7 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-
+var favicon = require('serve-favicon');
 // Sets up the Express App
 var app = express();
 var PORT;
@@ -25,6 +25,9 @@ app.use(bodyParser.text());
 // Router
 // require(path.join(__dirname, "./app/routing/apiRoutes"))(app);
 require(path.join(__dirname, "./routing/htmlRoutes"))(app);
+
+// Favicon
+app.use(favicon(__dirname + '/public/assets/img/favicon.ico'));
 
 // Listener
 app.listen(PORT, function() {

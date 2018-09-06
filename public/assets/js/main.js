@@ -364,7 +364,7 @@
 		glitchStart: {min: 500, max: 4000},
 		// Max and Min values of time that an element keeps each glitch state. 
 		// In this case we are alternating classes so this is the time that an element will have one class before it gets replaced.
-		glitchState: {min: 50, max: 250},
+		glitchState: {min: 50, max: 400},
 		// Number of times the class is changed per glitch iteration.
 		glitchTotalIterations: 6
 	};
