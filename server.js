@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.text());
 
 // Router
-// require(path.join(__dirname, "./app/routing/apiRoutes"))(app);
+require(path.join(__dirname, "./routing/apiRoutes"))(app);
 require(path.join(__dirname, "./routing/htmlRoutes"))(app);
 
 // Favicon
