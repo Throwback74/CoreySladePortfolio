@@ -1,0 +1,322 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:900|Josefin+Sans:400);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after {display: table;  content: ''; }
+.clearfix:after { clear: both; }
+
+* {
+	font-family: 'Lato', 'Open Sans', sans-serif;
+}
+
+body {
+	background: #2a2e39;
+	color: #dbdbdb;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+	color: #36b6dd;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	outline: none;
+	color: #fff !important;
+}
+
+.resumeDownload{
+	color: #fff;
+}
+
+/* .image-container{
+	background-image: url("/assets/images/Backgrounds/8231NT5.png");
+	background-size: cover;
+} */
+
+.header-image {
+	background-image: url("../img/coastSunset.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #999;
+}
+
+.codrops-links {
+	position: relative;
+	-webkit-flex: none;
+	flex: none;
+	white-space: nowrap;
+}
+
+.codrops-links::after {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1px;
+	width: 2px;
+	height: 100%;
+	background: #dbdbdb;
+	content: '';
+	-webkit-transform: rotate3d(0,0,1,22.5deg);
+	transform: rotate3d(0,0,1,22.5deg);
+}
+
+.codrops-icon {
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0em 0;
+	width: 1.5em;
+	text-decoration: none;
+}
+
+.codrops-icon span {
+	display: none;
+}
+
+.codrops-icon:before {
+	margin: 0 5px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon--drop:before {
+	content: "\e001";
+}
+
+.codrops-icon--prev:before {
+	content: "\e004";
+}
+
+.demos {
+	margin-top: 0.5em;
+}
+
+.demos__item {
+	display: inline-block;
+	margin: 0 1em 0 0;
+	padding: 0.2em 0;
+	text-transform: uppercase;
+	white-space: nowrap;
+	letter-spacing: 2px;
+	font-size: 0.75em;
+}
+
+.demos__item--current {
+	border-bottom: 1px solid #000;
+	border-color: initial;
+}
+
+.related {
+	padding: 9em 1em;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.8;
+}
+
+.container {
+	max-width: inherit;
+	width: inherit;
+}
+
+.navbar {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.hero-foot {
+	text-align: right;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+
+.footCol {
+	height: 70px;
+}
+
+.fillerImg {
+	width: 355px;
+}
+
+.items-wrap {
+	overflow: auto;
+}
+
+.navbar-brand{
+	margin-top: 11px;
+}
+
+.hero.is-info,
+.navbar-menu, 
+#navMenu {
+	background-color: rgba(100, 93, 206, 0);
+}
+
+.hero.is-info .navbar-link.is-active, .hero.is-info .navbar-link:hover, .hero.is-info a.navbar-item.is-active, .hero.is-info a.navbar-item:hover {
+	background-color: transparent !important;
+	color: rgba(54, 182, 221, 0.85) !important;
+}
+
+.navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover, a.resumeDownload:hover {
+	/* background-color: #fafafa; */
+	background-color: transparent !important;
+	color: rgba(54, 182, 221, 0.85) !important;
+}
+
+.downloadIcon.resumeDownload:hover .resumeLink.resumeDownload:hover {
+	background-color: transparent !important;
+	color: rgba(54, 182, 221, 0.85) !important;
+}
+
+.downloadIcon {
+	margin-right: 5px;
+}
+
+.resume-download:hover, .resumeLink:hover {
+	background-color: transparent !important;
+	color: rgba(54, 182, 221, 0.85) !important;
+}
+
+.downloadIcon:hover {
+	background-color: transparent !important;
+	color: rgba(54, 182, 221, 0.85) !important;
+}
+
+.firstBurger {
+	margin-top: 1em;
+}
+
+.navbar-menu {
+	background-color: rgba(100, 93, 206, 0) !important;
+}
+
+.navbar-item {
+	font-family: 'Lato', sans-serif;
+}
+
+.navbar-end {
+	font-size: 16px !important;
+	font-weight: 700;
+}
+
+.nav-wrapper{
+	padding-left:70px;
+	padding-right:40px;
+	font-family: 'Lato', sans-serif;
+}
+
+.brand-logo {
+	font-weight: 300 !important;
+	font-size: 30px;
+}
+
+#logo2 {
+	font-weight: 900;
+}
+
+.container-fluid {
+	margin: 0 auto;
+}
+
+.box {
+	margin: 0 auto;
+	background-color: #ffffff3b !important;
+}
+
+.aboutMeHeader {
+	font-size: 50px;
+	color: #1ab3de;
+	font-weight: 900;
+	font-family: "Playfair Display", Georgia, serif;
+}
+
+.contentP {
+	font-family: "Playfair Display", Georgia, serif;
+}
+
+.level-item {
+	color: #1ab3de;
+}
+
+.deviconTitle {
+	position: relative;
+	left: -15%;
+	/* right: 164%;
+	position: -webkit-sticky;
+	position: sticky; 
+	top: 10px; */
+	font-size: 34px;
+	font-family: "Playfair Display", Georgia, serif;
+}
+
+a.item.fillerLink {
+	height: 70px !important;
+}
+
+.hidden {
+	display: none;
+}
+
+.svgGrid {
+	width: 62px;
+	text-align: center;
+}
+
+.grid-rect {
+	stroke-width: 4px;
+}
+
+.media-content {
+	color: #e09e43;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media screen and (min-width: 1472px) {
+	.container {
+		max-width: inherit;
+		width: inherit;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.container {
+    max-width: inherit;
+    width: inherit;
+	}
+}
+@media screen and (min-width: 1088px) {
+	.container {
+    max-width: inherit;
+    width: inherit;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.demos__item {
+		margin-bottom: 1.5em;
+	}
+}

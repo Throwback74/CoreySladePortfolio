@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corey's Portfolio | About Me</title>
+  <meta name="description" content="A simple grid layout with an initial fullscreen intro" />
+  <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/about.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/layout-simple.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+  <div id="container" class="container image-container">
+    <section class="hero is-info is-fullheight header-image intro">
+      <img class="intro__image" src="/assets/img/coastSunset2.jpg" alt="Iceland galcier" />
+      <div class="intro__content">
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  <a href="/home" class="brand-logo navbar-item">COREY
+                    <span id="logo2">SLADE</span>
+                  </a>
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                  <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                    <span aria-hidden="true" id="firstBurger"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </span>
+                </a>
+              </div>
+              <div id="navbarMenuHeroA navMenu" class="navbar-menu has-text-white">
+                <div class="navbar-end">
+                  <a href="/index" class="navbar-item is-active">
+                    HOME
+                  </a>
+                  <a href="/about" class="navbar-item">
+                    ABOUT
+                  </a>
+                  <a href="/portfolio" class="navbar-item">
+                    PORTFOLIO
+                  </a>
+                  <a href="/contact" class="navbar-item">
+                    CONTACT
+                  </a>
+                  <a class="resumeLink navbar-item" href="/assets/document/CoreySladeResume4-2018-a.pdf" download><span
+                      class="downloadIcon resumeDownload">
+                      <i class="fas fa-download"></i> </span>
+                    Download My Resume
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="hero-body has-text-centered">
+          <div class="container-fluid">
+            <header class="columns">
+              <h1 class="column is-12 aboutMeHeader">About Me</h1>
+            </header>
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128">
+                    <img src="/assets/img/coreySlade.jpg" alt="Corey Picture">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="contentP">
+                      <strong>Corey Slade</strong>
+                      <br>
+                      I am a Full Stack Developer from San Diego with experience doing both front-end and back-end
+                      development in the
+                      MERN stack.
+                      Experience with HTML5, CSS3, Javascript, jQuery, Node.js, Express, Firebase, MySQL, Sequelize.js,
+                      Handlebars, MongoDB, Mongoose, and React.
+                      Experience with Front-end Frameworks such as Bootstrap, Materialize, Bulma.io, and Material
+                      Design/Material Design Lite.
+                    </p>
+                  </div>
+                  <nav class="level is-mobile">
+                    <div class="level-item">
+                      Click the <span class="svgGrid"></span> button below to see the languages, design and development tools I know how to use.
+                    </div>
+                  </nav>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-foot">
+          <div class="container-fluid columns footCol">
+          <div class="column is-11">
+          </div>
+          <div class="column">
+          <button class="trigger">
+            <svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+              <g class="icon icon--grid">
+                <rect x="32.5" y="5.5" width="22" height="22" />
+                <rect x="4.5" y="5.5" width="22" height="22" />
+                <rect x="32.5" y="33.5" width="22" height="22" />
+                <rect x="4.5" y="33.5" width="22" height="22" />
+              </g>
+              <g class="icon icon--cross">
+                <line x1="4.5" y1="55.5" x2="54.953" y2="5.046" />
+                <line x1="54.953" y1="55.5" x2="4.5" y2="5.047" />
+              </g>
+            </svg>
+            <span>View content</span>
+          </button>
+        </div>
+        </div>
+        </div>
+        <!-- </div> -->
+    </section>
+    <section class="items-wrap">
+      <a href="#" class="item fillerLink">
+          <img class="item__image fillerImg" src="" />
+          <h2 class="item__title"></h2>
+      </a>
+      <a href="#" class="item fillerLink">
+          <img class="item__image fillerImg" src="" />
+          <h2 class="item__title"></h2>
+      </a>
+      <h2 id="deviconTitle" class="deviconTitle hidden">Technologies & Tools</h2>
+      <a href="#" class="item fillerLink">
+          <img class="item__image fillerImg" src="" />
+          <h2 class="item__title"></h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/mern.svg" alt="MERN Stack" />
+        <h2 class="item__title">MERN Stack</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/javascript.svg" alt="Javascript" />
+        <h2 class="item__title">Javascript</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/jquery.svg" alt="jQuery" />
+        <h2 class="item__title">jQuery</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image adjustImg" src="/assets/img/svg/html-5.svg" alt="HTML5" />
+        <h2 class="item__title">HTML5</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image adjustImg" src="/assets/img/svg/css-3.svg" alt="CSS3" />
+        <h2 class="item__title">CSS3</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/nodejs-icon.svg" alt="Node.js" />
+        <h2 class="item__title">Node.js</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/express.svg" alt="Express.js" />
+        <h2 class="item__title">Express.js</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image adjustImg" src="/assets/img/svg/firebase.svg" alt="Firebase" />
+        <h2 class="item__title">Firebase</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/mysql.svg" alt="MySQL" />
+        <h2 class="item__title">MySQL</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/sequelize.svg" alt="Sequelize.js" />
+        <h2 class="item__title">Sequelize.js</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/handlebars.svg" alt="Handlebars.js" />
+        <h2 class="item__title">Handlebars.js</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/mongodb.svg" alt="MongoDB" />
+        <h2 class="item__title">MongoDB</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image mongooseImg" src="/assets/img/svg/mongoose.png" alt="Mongoose.js" />
+        <h2 class="item__title">Mongoose.js</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/react.svg" alt="ReactJS" />
+        <h2 class="item__title">ReactJS</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/bootstrap.svg" alt="Bootstrap" />
+        <h2 class="item__title">Bootstrap</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/materializecss.svg" alt="MaterializeCSS" />
+        <h2 class="item__title">MaterializeCSS</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image adjustImg" src="/assets/img/svg/bulma-b.svg" alt="Bulma" />
+        <h2 class="item__title">Bulma</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/material-ui.svg" alt="Material UI" />
+        <h2 class="item__title">Material UI</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/es6.svg" alt="ES6" />
+        <h2 class="item__title">ES6</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/markdown.svg" alt="Markdown" />
+        <h2 class="item__title">Markdown</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/passport.svg" alt="Passport.js" />
+        <h2 class="item__title">Passport.js</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/react-router.svg" alt="React Router" />
+        <h2 class="item__title">React Router</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/jscs.svg" alt="JSCS" />
+        <h2 class="item__title">JSCS</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/lodash.svg" alt="Lodash" />
+        <h2 class="item__title">Lodash</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/babel.svg" alt="Babel" />
+        <h2 class="item__title">Babel</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/mocha.svg" alt="Mocha" />
+        <h2 class="item__title">Mocha</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/chai.svg" alt="Chai" />
+        <h2 class="item__title">Chai</h2>
+      </a>
+      <a href="#" class="item">
+          <img class="item__image" src="/assets/img/svg/nextjs.svg" alt="Next.js" />
+          <h2 class="item__title">Next.js</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/npm.svg" alt="NPM" />
+        <h2 class="item__title">NPM</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/yarn.svg" alt="Yarn" />
+        <h2 class="item__title">Yarn</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/webpack.svg" alt="Webpack" />
+        <h2 class="item__title">Webpack</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/git-icon.svg" alt="Git" />
+        <h2 class="item__title">Git</h2>
+      </a>
+    </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/assets/js/classie.js"></script>
+  <script src="/assets/js/about.js"></script>
+  <script>
+    (function () {
+      var container = document.getElementById('container'),
+        trigger = container.querySelector('button.trigger');
+      var iconTitle = document.getElementById('deviconTitle');
+
+      function toggleContent() {
+        if (classie.has(container, 'container--open')) {
+          classie.remove(container, 'container--open');
+          classie.remove(trigger, 'trigger--active');
+          window.addEventListener('scroll', noscroll);
+          classie.add(iconTitle, 'hidden');
+        } else {
+          classie.add(container, 'container--open');
+          classie.add(trigger, 'trigger--active');
+          window.removeEventListener('scroll', noscroll);
+          classie.remove(iconTitle, 'hidden');
+        }
+      }
+
+      function noscroll() {
+        window.scrollTo(0, 0);
+      }
+
+      // reset scrolling position
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+      // disable scrolling
+      window.addEventListener('scroll', noscroll);
+
+      trigger.addEventListener('click', toggleContent);
+
+      // For Demo purposes only (prevent jump on click)
+      [].slice.call(document.querySelectorAll('.items-wrap a')).forEach(function (el) {
+        el.onclick = function () {
+          return false;
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>
