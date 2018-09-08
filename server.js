@@ -2,6 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var db = require("./models");
 var favicon = require('serve-favicon');
 // Sets up the Express App
 var app = express();
@@ -30,7 +31,9 @@ require(path.join(__dirname, "./routing/htmlRoutes"))(app);
 app.use(favicon(__dirname + '/public/assets/img/favicon.ico'));
 
 // Listener
-app.listen(PORT, function() {
-  console.log("Portfolio App is listening on PORT: " + PORT);
-  console.log("App active at http://localhost:" + PORT);
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("Portfolio App is listening on PORT: " + PORT);
+    console.log("App active at http://localhost:" + PORT);
+});
 });
