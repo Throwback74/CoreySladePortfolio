@@ -218,7 +218,7 @@ a:focus {
 }
 
 .navbar-end {
-	font-size: 20px !important;
+	font-size: 15px !important;
 	font-weight: 700;
 }
 
@@ -230,7 +230,7 @@ a:focus {
 
 .brand-logo {
 	font-weight: 300 !important;
-	font-size: 45px !important;
+	font-size: 32px !important;
 }
 
 #logo2 {
@@ -247,7 +247,7 @@ a:focus {
 }
 
 .aboutMeHeader {
-	font-size: 60px;
+	font-size: 45px;
 	color: #1ab3de;
 	font-weight: 900;
 	font-family: "Playfair Display", Georgia, serif;
@@ -258,19 +258,19 @@ a:focus {
 }
 
 .contentName {
-	font-size: 1.5em !important;
+	font-size: 1.25em !important;
 	font-family: "Playfair Display", Georgia, serif;
 	color: #e09e43 !important;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.image.is-256x256 {
-  height: 256px;
-  width: 256px;
+.image.is-200x200 {
+  height: 200px;
+  width: 200px;
 }
 
 .level.is-mobile {
-	margin-top: 40px;
+	margin-top: 26px;
 }
 
 .level-item {

@@ -43,9 +43,9 @@
 .intro__content {
 	position: absolute;
 	bottom: 0;
-	padding: 1.8em;
+	padding: 0, 1.8em, 1.8em, 1.8em;
 	width: 100%;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	height: 100%;
 }
 
