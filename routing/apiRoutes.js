@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 
 module.exports = function(app) {
 
-// TODO - subject line if/else not working, no acknowledgement on client side and figure out "url" requirements for website field
+
 app.post("/api/email", function(req, res) {
     console.log(req.body);
     var email = req.body; 
