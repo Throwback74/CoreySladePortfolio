@@ -117,8 +117,9 @@ a:focus {
 	display: none;
 }
 
+/* Switching from block to none */
 .btn--menu.mode--code .icon--menu-alt {
-	display: block;
+	display: none;
 }
 
 /* Icons */
@@ -142,6 +143,10 @@ a:focus {
 	position: absolute;
 	right: 2.5em;
 	top: 3em;
+}
+
+.icon--menu, .icon--menu-alt {
+	display: none;
 }
 
 /* Content */
