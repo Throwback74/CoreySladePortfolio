@@ -115,7 +115,7 @@ a.anchor {
 }
 
 .fa-download {
-    padding-top: 16px;
+    padding-top: 5px;
 }
 
 .contactMe {
@@ -469,35 +469,6 @@ footer {
     -webkit-font-smoothing: antialiased;
 }
 
-/* .fa-twitter::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f099";
-}
-
-.fa-facebook-f::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f39e";
-}
-
-.fa-instagram::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f16d";
-}
-
-.fa-github::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f09b";
-}
-
-.fa-linkedin-in::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0e1";
-} */
 .icon,
 .copyright {
     display: inline-block;
