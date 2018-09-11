@@ -1,23 +1,36 @@
-.brand-logo {
+/* .brand-logo {
   font-weight: 300 !important;
   font-size: 30px;
 }
 
 #logo2 {
   font-weight: 900;
-}
+} */
 
 .slide__title {
   text-decoration: double;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: rgba(8, 48, 69, 0.3);
 }
 
 .slide__subtitle {
-    color: #f9c060;
+    color: #ccbb64;
     font-weight: 700;
     text-decoration: double;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgba(8, 48, 69, 0.3);
 }
+
+/* @media screen and (max-width: 740px){
+  .slide__title {
+    font-size: 2.25rem;
+  }
+
+  .slide__subtitle {
+    font-size: 0.8rem;
+  }
+} */
+
 
 .slide__number {
   text-decoration: double;
@@ -56,7 +69,7 @@
   filter: blur(2px);
 }
 
-.sidepanel  {
+/* .sidepanel  {
   width: 0;
   position: fixed;
   z-index: 1;
@@ -100,7 +113,7 @@
 
 .openbtn:hover {
   background-color:#444;
-}
+} */
 
 .slideshow {
   pointer-events: none;
@@ -123,7 +136,13 @@
   display: block;
 }
 
-/*
+.detailsTag {
+  /* color: #36b6dd; */
+  /* color: #6dcc9e */
+  color:  var(--color-link);
+}
+
+/* background: #232323; alt green color: #00b89c
 <filter id="shadow">
 <feDropShadow dx="4" dy="8" stdDeviation="4"/>
 </filter>

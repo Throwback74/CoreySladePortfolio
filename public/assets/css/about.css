@@ -260,7 +260,7 @@ a:focus {
 .contentName {
 	font-size: 1.25em !important;
 	font-family: "Playfair Display", Georgia, serif;
-	color: #e09e43 !important;
+	color: #ccbb64 !important;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -303,7 +303,7 @@ a.item.fillerLink {
 }
 
 .media-content {
-	color: #e09e43;
+	color: #ccbb64;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 

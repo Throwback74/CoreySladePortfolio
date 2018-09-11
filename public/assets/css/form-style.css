@@ -156,7 +156,7 @@ input:not([type="submit"]),
 textarea {
         outline: none;
         display: block;
-        width: 380px;
+        /* width: 380px; */
         padding: 4px 8px;
         border: 1px dashed #DBDBDB;
         color: #3F3F3F;
@@ -363,4 +363,81 @@ input[type=submit]:focus {
                 0 0 0px 5px #E0E0E0;
         box-shadow: 0px -1px 1px #FFF inset,
                 0 0 0px 5px #E0E0E0;
+}
+
+@media screen and (max-width: 740px){
+        input:not([type="submit"]) {
+                height: 40px;
+                width: 514px;
+        }
+
+        textarea {
+                min-height: 150px;
+                resize: both;
+                min-width: 514px;
+        }
+
+        input[type=submit] {
+                margin-left: 70%;
+        }
+
+        #content {
+                width: 575px;
+        }
+
+}
+
+@media screen and (max-width: 620px){
+        input:not([type="submit"]) {
+                height: 40px;
+                width: 314px;
+        }
+
+        textarea, #message {
+                min-height: 150px;
+                resize: both;
+                min-width: 314px !important;
+        }
+        
+        input:not([type="submit"]), textarea {
+                min-width: 314px !important;
+        }
+
+        input[type=submit] {
+                margin-left: 56%;
+        }
+
+        #content {
+                width: 400px;
+        }
+
+
+}
+
+@media screen and (max-width: 410px){
+        input:not([type="submit"]) {
+                height: 40px;
+                width: 120px;
+        }
+
+        textarea, #message, .messageBox {
+                min-height: 150px;
+                resize: both;
+                min-width: 120px !important;
+                width: 120px !important;
+        }
+        
+        input:not([type="submit"]), textarea {
+                min-width: 120px !important;
+        }
+
+        input[type=submit] {
+                margin-left: -4%;
+        }
+
+        #content {
+                width: 200px;
+        }
+
+
 }

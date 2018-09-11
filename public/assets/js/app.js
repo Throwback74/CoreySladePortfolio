@@ -1,12 +1,12 @@
-$(document).ready(function(){
-    $('.carousel.carousel-slider').carousel({full_width: true});
+// $(document).ready(function(){
+//     $('.carousel.carousel-slider').carousel({full_width: true});
 
 
-});
+// });
 
-setInterval(function(){
-    $('.carousel').carousel('next');
-}, 5000);
+// setInterval(function(){
+//     $('.carousel').carousel('next');
+// }, 5000);
 
 //SCROLLSPY
 $(document).ready(function(){
