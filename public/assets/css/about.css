@@ -307,6 +307,19 @@ a.item.fillerLink {
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.level-item {
+	white-space: normal; 
+}
+
+.splitLevel {
+	display: none;
+}
+
+.level.is-mobile.splitMobile {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
 @media screen and (min-width: 1472px) {
 	.container {
 		max-width: inherit;
@@ -321,13 +334,91 @@ a.item.fillerLink {
     width: inherit;
 	}
 }
+@media screen and (max-width: 1160px){
+	.contentName{
+		font-size: 19px !important;
+	}
+	.contentP {
+		font-size: 15px !important;
+	}
+	.level-item {
+		font-size: 15px !important;
+	}
+}
+@media screen and (max-width: 1000px){
+	.image.is-200x200 {
+		height: 160px;
+		width: 160px;
+	}
+}
+@media screen and (max-width: 950px){
+	.fullLevel {
+		display: none;
+	}
+	.level.is-mobile.fullMobile {
+		display: none;
+	}
+	.splitLevel {
+		display: flex;
+	}
+}
 @media screen and (min-width: 1088px) {
 	.container {
     max-width: inherit;
     width: inherit;
 	}
 }
-
+@media screen and (max-width: 770px){
+	.column {
+		display: inline-flex !important;
+	}
+	.contentName{
+		font-size: 17px !important;
+	}
+	.contentP {
+		font-size: 14px !important;
+	}
+	.level-item {
+		font-size: 14px !important;
+	}
+	.aboutMeHeader {
+		font-size: 30px !important;
+	}
+	.deviconTitle {
+		font-size: 28px !important;
+	}	
+}
+@media screen and (max-width: 700px){
+	.image.is-200x200 {
+		margin-top: 15%;
+	}
+	.hero-body{
+		padding: 2rem 1.5rem;
+	}
+}
+@media screen and (max-width: 650px){
+	.image.is-200x200 {
+		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 615px){
+	.image.is-200x200 {
+		margin-top: 35%;
+	}
+}
+@media screen and (max-width: 550px){
+	.image.is-200x200 {
+		margin-top: 45%;
+	}
+	.hero-body{
+		padding: 1rem 1.5rem;
+	}
+}
+@media screen and (max-width: 500px){
+	.image.is-200x200 {
+		margin-top: 60%;
+	}
+}
 @media screen and (max-width: 590px) {
 	.demos__item {
 		margin-bottom: 1.5em;

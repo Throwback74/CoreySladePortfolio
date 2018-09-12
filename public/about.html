@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Corey's Portfolio | About Me</title>
-  <meta name="description" content="A simple grid layout with an initial fullscreen intro" />
-  <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+  <meta name="description" content="About Me page with a simple grid layout and an initial fullscreen intro" />
+  <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition, animation, about me, about, Corey, Slade, full stack, developer, designer, coder" />
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,400,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
@@ -73,7 +73,7 @@
             <header class="columns">
               <h1 class="column is-12 aboutMeHeader">About Me</h1>
             </header>
-            <div class="box">
+            <div class="box" id="box">
               <article class="media">
                 <div class="media-left">
                   <figure class="image is-200x200">
@@ -94,22 +94,54 @@
                       Design/Material Design Lite.
                     </p>
                   </div>
-                  <nav class="level is-mobile">
-                    <div class="level-item">
+                  <nav class="level is-mobile fullMobile">
+                    <div class="level-item fullLevel">
                       Click the <span class="svgGrid"></span> button below to see the languages, design and development tools I know how to use.
                     </div>
                   </nav>
                 </div>
               </article>
+                  <nav class="level is-mobile splitMobile">
+                      <!-- <div class="level-left splitLevel"> -->
+                        <div class="level-item splitLevel">
+                          Click the <span class="svgGrid"></span> button below to see the languages, design
+                        </div>
+                      <!-- </div> -->
+                  </nav>
+                  
+                  <nav class="level is-mobile splitMobile">
+                      <!-- <div class="level-left splitLevel"> -->
+                          <div class="level-item splitLevel">
+                            and development tools I know how to use.
+                          </div>
+                      <!-- </div> -->
+                  </nav>
+                
+                  <!-- <div class="level">
+                  <nav class="level-left is-mobile splitMobile">
+                    <div class="level-item splitLevel">
+                      Click the <span class="svgGrid"></span> button below to see the languages, design
+                    </div>
+                  </nav>
+                  <nav class="level-left is-mobile splitMobile">
+                    <div class="level-item splitLevel">
+                      and development tools I know how to use.
+                    </div>
+                  </nav>
+                </div> -->
+              
             </div>
           </div>
         </div>
 
         <div class="hero-foot">
           <div class="container-fluid columns footCol">
-          <div class="column is-11">
+          <div class="column is-3">
           </div>
-          <div class="column">
+          <div class="column is-6">
+            <h2 id="deviconTitle" class="has-text-centered deviconTitle hidden">Technologies & Tools</h2>
+          </div>
+          <div class="column is-3">
           <button class="trigger">
             <svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
               <g class="icon icon--grid">
@@ -131,19 +163,19 @@
         <!-- </div> -->
     </section>
     <section class="items-wrap">
-      <a href="#" class="item fillerLink">
+      <!-- <a href="#" class="item fillerLink">
           <img class="item__image fillerImg" src="" />
           <h2 class="item__title"></h2>
       </a>
       <a href="#" class="item fillerLink">
           <img class="item__image fillerImg" src="" />
           <h2 class="item__title"></h2>
-      </a>
-      <h2 id="deviconTitle" class="deviconTitle hidden">Technologies & Tools</h2>
-      <a href="#" class="item fillerLink">
+      </a> -->
+      <!-- <h2 id="deviconTitle" class="deviconTitle hidden">Technologies & Tools</h2> -->
+      <!-- <a href="#" class="item fillerLink">
           <img class="item__image fillerImg" src="" />
           <h2 class="item__title"></h2>
-      </a>
+      </a> -->
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/mern.svg" alt="MERN Stack" />
         <h2 class="item__title">MERN Stack</h2>
@@ -283,6 +315,7 @@
       var container = document.getElementById('container'),
         trigger = container.querySelector('button.trigger');
       var iconTitle = document.getElementById('deviconTitle');
+      var box = document.getElementById('box');
 
       function toggleContent() {
         if (classie.has(container, 'container--open')) {
@@ -290,11 +323,13 @@
           classie.remove(trigger, 'trigger--active');
           window.addEventListener('scroll', noscroll);
           classie.add(iconTitle, 'hidden');
+          classie.remove(box, 'hidden');
         } else {
           classie.add(container, 'container--open');
           classie.add(trigger, 'trigger--active');
           window.removeEventListener('scroll', noscroll);
           classie.remove(iconTitle, 'hidden');
+          classie.add(box, 'hidden');
         }
       }
 
