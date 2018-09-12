@@ -10,6 +10,53 @@ $(document).ready(function () {
   </svg>`
   );
 
+
+  $('.navbar-burger').click(function() {
+    $('#navbarMenuHeroA, .navbar-burger').toggleClass('is-active');
+  });
+
+    // // Close mobile & tablet menu on item click
+    // $('.navbar-item').each(function(e) {
+    //   $(this).click(function(){
+    //     if($('#navBurger').hasClass('is-active')){
+    //       $('#navBurger').removeClass('is-active');
+    //       $('#navMenu').removeClass('is-active');
+    //     }
+    //   });
+    // });
+  
+
+
+    // Open or Close mobile & tablet menu
+    // $('#navBurger').click(function () {
+    //   if($('#navBurger').hasClass('is-active')){
+    //     $('#navBurger').removeClass('is-active');
+    //     $('#navMenu').removeClass('is-active');
+    //   }else {
+    //     $('#navBurger').addClass('is-active');
+    //     $('#navMenu').addClass('is-active');
+    //   }
+    // });
+
+  // function getAll(selector) {
+  //   return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+  // }
+  // // Toggles
+
+  // var $burgers = getAll('.burger');
+
+  // if ($burgers.length > 0) {
+  //   console.log($burgers);
+  //   $burgers.forEach(function ($el) {
+  //     $el.addEventListener('click', function () {
+  //       var target = $el.dataset.target;
+  //       var $target = document.getElementById(target);
+  //       $el.classList.toggle('is-active');
+  //       $target.classList.toggle('is-active');
+  //     });
+  //   });
+  // }
+
   // if($("#container").hasClass("container--open")) {
   //     $(".deviconTitle").text("Technologies & Tools");
   //   }else{

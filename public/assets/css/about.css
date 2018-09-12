@@ -311,13 +311,19 @@ a.item.fillerLink {
 	white-space: normal; 
 }
 
-.splitLevel {
+.splitLevel, .splitLevelSmaller {
 	display: none;
 }
 
-.level.is-mobile.splitMobile {
+.level.is-mobile.splitMobile,
+.level.is-mobile.splitMobileSmaller {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
+}
+
+.navbar-burger {
+	height: 1.25rem;
+	margin-top: 20px;
 }
 
 @media screen and (min-width: 1472px) {
@@ -344,6 +350,11 @@ a.item.fillerLink {
 	.level-item {
 		font-size: 15px !important;
 	}
+}
+@media screen and (max-width: 1087px){
+	.navbar-menu.is-active {
+    background-color: rgba(8, 48, 69, 0.5) !important;
+	}	
 }
 @media screen and (max-width: 1000px){
 	.image.is-200x200 {
@@ -387,6 +398,9 @@ a.item.fillerLink {
 	.deviconTitle {
 		font-size: 28px !important;
 	}	
+	.brand-logo {
+		font-size: 30px;
+	}
 }
 @media screen and (max-width: 700px){
 	.image.is-200x200 {
@@ -413,6 +427,9 @@ a.item.fillerLink {
 	.hero-body{
 		padding: 1rem 1.5rem;
 	}
+	.brand-logo {
+		font-size: 28px;
+	}
 }
 @media screen and (max-width: 500px){
 	.image.is-200x200 {
@@ -422,5 +439,28 @@ a.item.fillerLink {
 @media screen and (max-width: 590px) {
 	.demos__item {
 		margin-bottom: 1.5em;
+	}
+}
+@media screen and (max-width: 460px){
+	.hero-body {
+    padding: 0rem 0.5rem;
+	}
+}
+@media screen and (max-width: 420px){
+	.splitLevel {
+		display: none;
+	}
+	.level.is-mobile.splitMobile {
+		display: none;
+	}
+	.splitLevelSmaller {
+		display: flex;
+	}
+	.columns:not(:last-child) {
+    margin-bottom: 0;
+	}
+	.aboutMeHeader {
+		font-size: 28px !important;
+		padding: 0;
 	}
 }
