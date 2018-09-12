@@ -326,6 +326,11 @@ a.item.fillerLink {
 	margin-top: 20px;
 }
 
+.aboutMeHeader.inner {
+	display: none !important;
+}
+
+/* Media Queries */
 @media screen and (min-width: 1472px) {
 	.container {
 		max-width: inherit;
@@ -378,6 +383,13 @@ a.item.fillerLink {
     max-width: inherit;
     width: inherit;
 	}
+	.deviconTitle {
+		font-size: 30px !important;
+	}
+	.svgBtn {
+		width: 90%;
+		height: 90%;
+	}
 }
 @media screen and (max-width: 770px){
 	.column {
@@ -399,7 +411,11 @@ a.item.fillerLink {
 		font-size: 28px !important;
 	}	
 	.brand-logo {
-		font-size: 30px;
+		font-size: 30px !important;
+	}
+	.svgBtn {
+		width: 80%;
+		height: 80%;
 	}
 }
 @media screen and (max-width: 700px){
@@ -428,7 +444,18 @@ a.item.fillerLink {
 		padding: 1rem 1.5rem;
 	}
 	.brand-logo {
-		font-size: 28px;
+		font-size: 28px !important;
+	}
+	.aboutMeHeader {
+		font-size: 28px !important;
+		padding: 0;
+	}
+	.deviconTitle {
+		font-size: 26px !important;
+	}	
+	.svgBtn {
+		width: 70%;
+		height: 70%;
 	}
 }
 @media screen and (max-width: 500px){
@@ -460,7 +487,28 @@ a.item.fillerLink {
     margin-bottom: 0;
 	}
 	.aboutMeHeader {
-		font-size: 28px !important;
+		font-size: 24px !important;
 		padding: 0;
+	}
+	.brand-logo {
+    font-size: 24px !important;
+	}
+	.aboutMeHeader.inner {
+		display: block !important;
+		padding-top: 20px;
+	}
+	.aboutMeHeader.outer {
+		display: none !important;
+	}
+	.navbar-brand {
+    margin-top: 0px !important;
+    margin-bottom: 6px !important;
+	}
+	.deviconTitle {
+		font-size: 24px !important;
+	}	
+	.svgBtn {
+		width: 60%;
+		height: 60%;
 	}
 }

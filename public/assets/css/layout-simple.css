@@ -257,6 +257,9 @@
 	.intro__content {
 		font-size: 0.85em;
 	}
+	.item__title {
+		font-size: 1.5em;
+	}
 }
 @media screen and (max-width: 770px) {
 	.item {
@@ -272,6 +275,6 @@
 	}
 
 	.intro__title {
-		font-size: 2em;
+		font-size: 1em;
 	}
 }
