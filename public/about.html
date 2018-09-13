@@ -138,12 +138,12 @@
 
         <div class="hero-foot">
           <div class="container-fluid columns footCol">
-          <div class="column is-3">
+          <div class="column is-hidden-mobile">
           </div>
-          <div class="column is-6">
-            <h2 id="deviconTitle" class="has-text-centered deviconTitle hidden">Technologies & Tools</h2>
+          <div class="column deviconTitleCol">
+            <h2 id="deviconTitle" class="has-text-centered deviconTitle hidden title-down">Technologies & Tools</h2>
           </div>
-          <div class="column is-3">
+          <div class="column is-1">
           <button class="trigger">
             <svg class="svgBtn" width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
               <g class="icon icon--grid">
@@ -162,29 +162,15 @@
         </div>
         </div>
         </div>
-        <!-- </div> -->
     </section>
     <section class="items-wrap">
-      <!-- <a href="#" class="item fillerLink">
-          <img class="item__image fillerImg" src="" />
-          <h2 class="item__title"></h2>
-      </a>
-      <a href="#" class="item fillerLink">
-          <img class="item__image fillerImg" src="" />
-          <h2 class="item__title"></h2>
-      </a> -->
-      <!-- <h2 id="deviconTitle" class="deviconTitle hidden">Technologies & Tools</h2> -->
-      <!-- <a href="#" class="item fillerLink">
-          <img class="item__image fillerImg" src="" />
-          <h2 class="item__title"></h2>
-      </a> -->
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/mern.svg" alt="MERN Stack" />
         <h2 class="item__title">MERN Stack</h2>
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/javascript.svg" alt="Javascript" />
-        <h2 class="item__title">Javascript</h2>
+        <h2 class="item__title titleAdjust"><span class="largeItemTitle">Javascript</span><span class="smallItemTitle">JS</span></h2>
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/jquery.svg" alt="jQuery" />
@@ -203,8 +189,8 @@
         <h2 class="item__title">Node.js</h2>
       </a>
       <a href="#" class="item">
-        <img class="item__image" src="/assets/img/svg/express.svg" alt="Express.js" />
-        <h2 class="item__title">Express.js</h2>
+        <img class="item__image" src="/assets/img/svg/expressjs.svg" alt="Express.js" />
+        <h2 class="item__title titleAdjust"><span class="largeItemTitle">Express.js</span><span class="smallItemTitle">Express</span></h2>
       </a>
       <a href="#" class="item">
         <img class="item__image adjustImg" src="/assets/img/svg/firebase.svg" alt="Firebase" />
@@ -216,11 +202,11 @@
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/sequelize.svg" alt="Sequelize.js" />
-        <h2 class="item__title">Sequelize.js</h2>
+        <h2 class="item__title titleAdjust"><span class="largeItemTitle">Sequelize.js</span><span class="smallItemTitle">Sequelize</span></h2>
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/handlebars.svg" alt="Handlebars.js" />
-        <h2 class="item__title">Handlebars.js</h2>
+        <h2 class="item__title handlebarsTitleAdjust"><span class="largeItemTitle">Handlebars.js</span><span class="smallItemTitle">Handlebars</span></h2>
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/mongodb.svg" alt="MongoDB" />
@@ -228,7 +214,7 @@
       </a>
       <a href="#" class="item">
         <img class="item__image mongooseImg" src="/assets/img/svg/mongoose.png" alt="Mongoose.js" />
-        <h2 class="item__title">Mongoose.js</h2>
+        <h2 class="item__title titleAdjust"><span class="largeItemTitle">Mongoose.js</span><span class="smallItemTitle">Mongoose</span></h2>
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/react.svg" alt="ReactJS" />
@@ -240,7 +226,7 @@
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/materializecss.svg" alt="MaterializeCSS" />
-        <h2 class="item__title">MaterializeCSS</h2>
+        <h2 class="item__title materializeTitle titleAdjust"><span class="largeItemTitle">Materialize CSS</span><span class="smallItemTitle">Materialize</span></h2>
       </a>
       <a href="#" class="item">
         <img class="item__image adjustImg" src="/assets/img/svg/bulma-b.svg" alt="Bulma" />
@@ -248,7 +234,7 @@
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/material-ui.svg" alt="Material UI" />
-        <h2 class="item__title">Material UI</h2>
+        <h2 class="item__title titleAdjust">Material UI</h2>
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/es6.svg" alt="ES6" />
@@ -260,7 +246,7 @@
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/passport.svg" alt="Passport.js" />
-        <h2 class="item__title">Passport.js</h2>
+        <h2 class="item__title titleAdjust"><span class="largeItemTitle">Passport.js</span><span class="smallItemTitle">Passport</span></h2>
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/react-router.svg" alt="React Router" />
@@ -289,6 +275,22 @@
       <a href="#" class="item">
           <img class="item__image" src="/assets/img/svg/nextjs.svg" alt="Next.js" />
           <h2 class="item__title">Next.js</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/momentjs.svg" alt="Momentjs" />
+        <h2 class="item__title"><span class="largeItemTitle">Moment.js</span><span class="smallItemTitle">Moment</span></h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/nodemon.svg" alt="Nodemon" />
+        <h2 class="item__title">Nodemon</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image" src="/assets/img/svg/eslint.svg" alt="ESLint" />
+        <h2 class="item__title">ESLint</h2>
+      </a>
+      <a href="#" class="item">
+        <img class="item__image envImg" src="/assets/img/svg/dotenv.png" alt="dotenv" />
+        <h2 class="item__title">dotenv</h2>
       </a>
       <a href="#" class="item">
         <img class="item__image" src="/assets/img/svg/npm.svg" alt="NPM" />

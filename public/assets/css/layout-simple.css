@@ -4,7 +4,8 @@
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	background: #2a2e39;
+	/* background: #2a2e39; */
+	background: rgb(8, 48, 69);
 	-webkit-transition: -webkit-transform 0.6s;
 	transition: transform 0.6s;
 	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
@@ -134,7 +135,8 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #2a2e39;
+	/* background: #2a2e39; */
+	background: rgb(8, 48, 69);
 	content: '';
 	opacity: 1;
 	-webkit-transition: opacity 0.6s;
@@ -155,9 +157,11 @@
 	overflow: hidden;
 	height: 22vw;
 	outline: none;
-	border: 5px solid #2a2e39;
+	/* border: 5px solid #2a2e39; */
+	border: 5px solid rgb(8, 48, 69);
 	border-width: 0 5px 10px;
-	background: #2a2e39;
+	/* background: #2a2e39; */
+	background: rgb(8, 48, 69);
 }
 
 /* max-width: 62%;
@@ -218,15 +222,22 @@
 	background-color: rgba(8, 48, 69, 0.5) !important;
 }
 
+.item__title.materializeTitle {
+	overflow-wrap: break-word;
+}
+
+.smallItemTitle {
+	display: none;
+}
+
+.largeItemTitle {
+	font-family: "Playfair Display", Georgia, serif;
+}
+.envImg{
+	min-height: 27%;
+}
 /* Media Queries */
 
-/* @media screen and (max-width: 1440px) {
-	.item {
-		-webkit-flex: 1 0 33.333%;
-		flex: 1 0 33.333%;
-		height: 30vw;
-	}
-} */
 @media screen and (max-width: 1441px){
 	.item {
 		-webkit-flex: 1 0 23.333%;
@@ -265,16 +276,43 @@
 	.item {
 		-webkit-flex: 1 0 25%;
 		flex: 1 0 25%;
+		height: 45vw;
+	}
+	.item__title {
+    font-size: 1.35em;
 	}
 }
 @media screen and (max-width: 590px) {
 	.item {
 		-webkit-flex: 1 0 33%;
 		flex: 1 0 33%;
-		height: 90vw;
+		height: 40vw;
 	}
-
+	.item__title {
+    font-size: 1em;
+	}
 	.intro__title {
 		font-size: 1em;
+	}
+	.envImg{
+		min-height: 40%;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.titleAdjust {
+    padding-right: 16px;
+    margin-left: -13%;
+	}
+	.handlebarsTitleAdjust {
+		padding-right: 16px;
+    margin-left: -15%;
+	}
+	.largeItemTitle {
+		display: none;
+	}
+	.smallItemTitle {
+		display: inline;
+		font-family: "Playfair Display", Georgia, serif;
 	}
 }

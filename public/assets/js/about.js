@@ -15,53 +15,46 @@ $(document).ready(function () {
     $('#navbarMenuHeroA, .navbar-burger').toggleClass('is-active');
   });
 
-    // // Close mobile & tablet menu on item click
-    // $('.navbar-item').each(function(e) {
-    //   $(this).click(function(){
-    //     if($('#navBurger').hasClass('is-active')){
-    //       $('#navBurger').removeClass('is-active');
-    //       $('#navMenu').removeClass('is-active');
-    //     }
-    //   });
-    // });
-  
+    // Hide #deviconTitle on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var titleHeight = $('#deviconTitle').outerHeight();
 
+$(window).scroll(function(event){
+    didScroll = true;
+});
 
-    // Open or Close mobile & tablet menu
-    // $('#navBurger').click(function () {
-    //   if($('#navBurger').hasClass('is-active')){
-    //     $('#navBurger').removeClass('is-active');
-    //     $('#navMenu').removeClass('is-active');
-    //   }else {
-    //     $('#navBurger').addClass('is-active');
-    //     $('#navMenu').addClass('is-active');
-    //   }
-    // });
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 150);
 
-  // function getAll(selector) {
-  //   return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
-  // }
-  // // Toggles
-
-  // var $burgers = getAll('.burger');
-
-  // if ($burgers.length > 0) {
-  //   console.log($burgers);
-  //   $burgers.forEach(function ($el) {
-  //     $el.addEventListener('click', function () {
-  //       var target = $el.dataset.target;
-  //       var $target = document.getElementById(target);
-  //       $el.classList.toggle('is-active');
-  //       $target.classList.toggle('is-active');
-  //     });
-  //   });
-  // }
-
-  // if($("#container").hasClass("container--open")) {
-  //     $(".deviconTitle").text("Technologies & Tools");
-  //   }else{
-  //     $(".deviconTitle").empty();
-  //   }
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the title, add class .title-up.
+    // This is necessary so you never see what is "behind" the title.
+    if (st > lastScrollTop && st > titleHeight){
+        // Scroll Down
+        $('#deviconTitle').removeClass('title-down').addClass('title-up');
+    } else {
+        // Scroll Up
+        // if(st + $(window).height() < $(document).height()) {
+            if(st <= 40) {
+            console.log(st);
+            $('#deviconTitle').removeClass('title-up').addClass('title-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
 
 
 
