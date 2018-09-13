@@ -669,3 +669,13 @@ a.item.fillerLink {
     margin-right: 0;
 	}
 }
+@media screen and (max-height: 610px){
+	.triggerShort{
+		bottom: -30px;
+	}
+}
+@media screen and (max-height: 580px){
+	.triggerShort{
+		bottom: -54px;
+	}
+}

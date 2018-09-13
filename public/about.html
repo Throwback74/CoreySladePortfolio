@@ -156,7 +156,7 @@
             <h2 id="deviconTitle" class="has-text-centered deviconTitle hidden title-down">Technologies & Tools</h2>
           </div>
           <div class="column is-1">
-          <button class="trigger">
+          <button class="trigger triggerShort">
             <svg class="svgBtn" width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
               <g class="icon icon--grid">
                 <rect x="32.5" y="5.5" width="22" height="22" />
@@ -337,12 +337,14 @@
         if (classie.has(container, 'container--open')) {
           classie.remove(container, 'container--open');
           classie.remove(trigger, 'trigger--active');
+          classie.add(trigger, 'triggerShort');
           window.addEventListener('scroll', noscroll);
           classie.add(iconTitle, 'hidden');
           classie.remove(box, 'hidden');
         } else {
           classie.add(container, 'container--open');
           classie.add(trigger, 'trigger--active');
+          classie.remove(trigger, 'triggerShort');
           window.removeEventListener('scroll', noscroll);
           classie.remove(iconTitle, 'hidden');
           classie.add(box, 'hidden');
