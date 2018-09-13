@@ -48,7 +48,6 @@ function hasScrolled() {
         // Scroll Up
         // if(st + $(window).height() < $(document).height()) {
             if(st <= 40) {
-            console.log(st);
             $('#deviconTitle').removeClass('title-up').addClass('title-down');
         }
     }
