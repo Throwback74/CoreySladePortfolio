@@ -1,3 +1,39 @@
+$(document).ready(function () {
+	$('.codeBtn').click(function() {
+		$('.designBtn').addClass('designStyle');
+	});
+	$('.designBtn').click(function() {
+		$('.designBtn').removeClass('designStyle');
+	})
+
+
+	//Bulma navbar "burger" function for mobile
+	$('.navbar-burger').click(function() {
+			$('#navbarMenuHeroA, .navbar-burger').toggleClass('is-active');
+	});
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+	var elems = document.querySelectorAll('.tap-target');
+	var instances = M.TapTarget.init(elems, options);
+});
+
+$(document).ready(function(){
+	// $('.tap-target').tapTarget();
+	$('.tap-target').tapTarget('open');
+	
+	setInterval(function(){
+		$('.tap-target').tapTarget('close');
+	}, 5000);
+
+
+
+});
+
+$(document).ready(function(){
+	$('.tooltipped').tooltip();
+	// $('.tap-target').tapTarget();
+});
 /**
  * main.js
  * http://www.codrops.com

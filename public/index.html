@@ -11,7 +11,10 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,400,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Rokkitt:100,400,900" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet"
+  	href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/home.css" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/pieces.css" />
 		<script>document.documentElement.className = 'js';</script>
@@ -80,18 +83,28 @@
 						</ul>
 					</div>
 					<div class="content__bottom">
-						<div class="switch mode mode--design">
-							<a class="switch__item switch__item--current">Designer</a>
-							<a class="switch__item"><span class="mode mode--design" data-switch data-glitch>Coder</span></a>
+						<div id="switchDiv" class="animated tada slower switch mode mode--design">
+							<a class="tooltipped waves-effect waves-light btn-large designBtn switch__item switch__item--current" data-position="top" data-tooltip="Click Me!">Designer</a>
+							<a id="designSwitch" class="tooltipped waves-effect waves-light btn-large codeBtn switch__item" data-position="top" data-tooltip="Click Me!"><span class="mode mode--design" data-switch data-glitch>Coder</span></a>
 						</div>
 						<div class="link-wrap">
-							<a href="/contact" class="contact-link mode mode--design" data-switch data-glitch><img src="/assets/img/logoTransparentNT.png" class="logoT" alt="logo"> Let's Build Something Together</a>
+							<a href="/contact" class="tooltipped contact-link mode mode--design" data-position="top" data-tooltip="Contact Me!" data-switch data-glitch><img src="/assets/img/logoTransparentNT.png" class="logoT" alt="logo"> Let's Build Something Together</a>
 						</div>
 					</div>
 				</div><!-- /content__inner-->
 			</div><!-- /content -->
+			<!-- Tap Target Structure -->
+			<!-- <div class="tap-target teal lighten-3" data-activates="designSwitch">
+				<div class="tap-target-content">
+						<h5>Available: 24/7</h5>
+						<p>Call us now to speak with someone about your matter.</p>
+						<a href="#!" onclick="$('.tap-target').tapTarget('close')">Dismiss</a>
+				</div>
+			</div> -->
 			<div class="loading"></div>
 		</main>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 		<script src="/assets/js/imagesloaded.pkgd.min.js"></script>
 		<script src="/assets/js/anime.min.js"></script>
 		<script src="/assets/js/charming.min.js"></script>
