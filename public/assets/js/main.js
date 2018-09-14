@@ -1,9 +1,12 @@
 $(document).ready(function () {
 	$('.codeBtn').click(function() {
 		$('.designBtn').addClass('designStyle');
+		$('#designSpan').removeClass('mode--design');
+		$('#designSpan').addClass('mode--code');
 	});
 	$('.designBtn').click(function() {
 		$('.designBtn').removeClass('designStyle');
+		$('.designSpan').removeClass('mode--code');
 	})
 
 
@@ -15,7 +18,7 @@ $(document).ready(function () {
 
 document.addEventListener('DOMContentLoaded', function() {
 	var elems = document.querySelectorAll('.tap-target');
-	var instances = M.TapTarget.init(elems, options);
+	// var instances = M.TapTarget.init(elems, options);
 });
 
 $(document).ready(function(){
@@ -25,6 +28,32 @@ $(document).ready(function(){
 	setInterval(function(){
 		$('.tap-target').tapTarget('close');
 	}, 5000);
+
+
+
+	if($('.designSpan').hasClass('mode--code')) {
+		setInterval(function() {
+			$('.designSpan').removeClass('mode--code');
+			$('.designSpan').addClass('mode--design');
+		}, 1000);
+		setInterval(function() {
+			$('.designSpan').removeClass('mode--design');
+			$('.designSpan').addClass('mode--code');
+		}, 800);
+		setInterval(function() {
+			$('.designSpan').removeClass('mode--code');
+			$('.designSpan').addClass('mode--design');
+		}, 600);
+		setInterval(function() {
+			$('.designSpan').removeClass('mode--design');
+			$('.designSpan').addClass('mode--code');
+		}, 1200);
+		setInterval(function() {
+			$('.designSpan').removeClass('mode--code');
+			$('.designSpan').addClass('mode--design');
+		}, 500);
+	}
+
 
 
 
@@ -397,10 +426,10 @@ $(document).ready(function(){
 	 */
 	GlitchFx.prototype.options = {
 		// Max and Min values for the time when to start the glitch effect.
-		glitchStart: {min: 500, max: 4000},
+		glitchStart: {min: 300, max: 4000},
 		// Max and Min values of time that an element keeps each glitch state. 
 		// In this case we are alternating classes so this is the time that an element will have one class before it gets replaced.
-		glitchState: {min: 50, max: 400},
+		glitchState: {min: 50, max: 600},
 		// Number of times the class is changed per glitch iteration.
 		glitchTotalIterations: 6
 	};
@@ -594,7 +623,7 @@ $(document).ready(function(){
 		switchOverlay();
 
 		if( mode === 'code' ) {
-			disablePageFx = true;
+			disablePageFx = true;  //changing true to false to test glitch
 			pm.removeTilt();
 			pm.stopLoopFx();
 			gfx.stopGlitch();

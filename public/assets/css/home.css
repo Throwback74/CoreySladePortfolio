@@ -211,8 +211,8 @@ a:focus {
 	font-weight: 400;
 	font-size: 1.4em;
 	text-transform: lowercase;
-	/* color: #e04643; */
-	color: #464646;
+	color: #e04643;
+	/* color: #464646; */
 }
 
 .menu {
@@ -339,6 +339,15 @@ a:focus {
 	padding-top: 7%;
 }
 
+.codeBtn > .mode--code {
+	font-family: 'Rokkitt', serif;
+	font-weight: 400;
+	font-size: 1.4em;
+	text-transform: lowercase;
+	/* color: #e04643; */
+	color: #464646;
+}
+
 .btn.designBtn, .btn-large.designBtn, .btn-small.designBtn {
 	background-color: #6dcc9e;
 	color: #fff;
@@ -369,6 +378,7 @@ a:focus {
 .contact-link {
 	display: inline-block;
 	padding: 1em 0;
+	font-size: 1.8em;
 }
 
 .overlay {
@@ -402,3 +412,4 @@ a:focus {
 		padding: 1em 1em 0;
 	}
 }
+/* TODO: Make Btns and Contact link responsive, add burger menu */
