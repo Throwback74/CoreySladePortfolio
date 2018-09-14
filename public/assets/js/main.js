@@ -1,13 +1,5 @@
 $(document).ready(function () {
-	$('.codeBtn').click(function() {
-		$('.designBtn').addClass('designStyle');
-		$('#designSpan').removeClass('mode--design');
-		$('#designSpan').addClass('mode--code');
-	});
-	$('.designBtn').click(function() {
-		$('.designBtn').removeClass('designStyle');
-		$('.designSpan').removeClass('mode--code');
-	})
+
 
 
 	//Bulma navbar "burger" function for mobile
@@ -30,32 +22,50 @@ $(document).ready(function(){
 	}, 5000);
 
 
+	var designBtnGlitch = function() {
+		// if($('.designSpan').hasClass('mode--code')) {
+			setInterval(function() {
+				$('.designSpan').removeClass('mode--code');
+				$('.designSpan').addClass('mode--design');
+			}, 1000);
+			setInterval(function() {
+				$('.designSpan').removeClass('mode--design');
+				$('.designSpan').addClass('mode--code');
+			}, 800);
+			setInterval(function() {
+				$('.designSpan').removeClass('mode--code');
+				$('.designSpan').addClass('mode--design');
+			}, 600);
+			setInterval(function() {
+				$('.designSpan').removeClass('mode--design');
+				$('.designSpan').addClass('mode--code');
+			}, 1200);
+			setInterval(function() {
+				$('.designSpan').removeClass('mode--code');
+				$('.designSpan').addClass('mode--design');
+			}, 500);
+			setInterval(function() {
+				$('.designSpan').removeClass('mode--design');
+				$('.designSpan').addClass('mode--code');
+			}, 700);
+		// }
+	}
 
-	if($('.designSpan').hasClass('mode--code')) {
+	$('.codeBtn').click(function() {
+		$('.designBtn').addClass('designStyle');
+		setInterval(function() {
+			$('.designSpan').removeClass('mode--design');
+			$('.designSpan').addClass('mode--code');
+		}, 1000);
+		designBtnGlitch();
+	});
+	$('.designBtn').click(function() {
+		$('.designBtn').removeClass('designStyle');
 		setInterval(function() {
 			$('.designSpan').removeClass('mode--code');
 			$('.designSpan').addClass('mode--design');
 		}, 1000);
-		setInterval(function() {
-			$('.designSpan').removeClass('mode--design');
-			$('.designSpan').addClass('mode--code');
-		}, 800);
-		setInterval(function() {
-			$('.designSpan').removeClass('mode--code');
-			$('.designSpan').addClass('mode--design');
-		}, 600);
-		setInterval(function() {
-			$('.designSpan').removeClass('mode--design');
-			$('.designSpan').addClass('mode--code');
-		}, 1200);
-		setInterval(function() {
-			$('.designSpan').removeClass('mode--code');
-			$('.designSpan').addClass('mode--design');
-		}, 500);
-	}
-
-
-
+	})
 
 });
 
