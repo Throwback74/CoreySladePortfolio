@@ -1,6 +1,33 @@
 $(document).ready(function () {
 
+// 	$(window).resize(function(){     
+// 		if ($('.desktopMenu').is(':hidden')){
+// 			console.log('Menu hidden btn size triggered');
+// 			// is mobile/tablet device
+// 			$('.designBtn').removeClass('btn-large');
+// 			$('.designBtn').addClass('btn');
+// 			$('.codeBtn').removeClass('btn-large');
+// 			$('.codeBtn').addClass('btn');
+// 		}else if($('.desktopMenu').is(':visible')) {
+// 			$('.designBtn').removeClass('btn');
+// 			$('.designBtn').addClass('btn-large');
+// 			$('.codeBtn').removeClass('btn');
+// 			$('.codeBtn').addClass('btn-large');
+// 		}else{
+// 			console.log('Menu NOT hidden btn size NOT triggered');
+// 		}
+// 	});
 
+// 	$(window).resize(function(){
+// 		if ($(window).width() <= 320) {
+// 					// is mobile device
+// 		}
+// });
+
+	$('.btn--menu').click(function(){
+		$('.title__inner').toggleClass('burgerOpen');
+		$('.burger-items').toggleClass('hidden');
+	});
 
 	//Bulma navbar "burger" function for mobile
 	$('.navbar-burger').click(function() {
@@ -52,18 +79,18 @@ $(document).ready(function(){
 	}
 
 	$('.codeBtn').click(function() {
-		$('.designBtn').addClass('designStyle');
 		setInterval(function() {
 			$('.designSpan').removeClass('mode--design');
 			$('.designSpan').addClass('mode--code');
+			$('.designBtn').addClass('designStyle');
 		}, 1000);
 		designBtnGlitch();
 	});
 	$('.designBtn').click(function() {
-		$('.designBtn').removeClass('designStyle');
 		setInterval(function() {
 			$('.designSpan').removeClass('mode--code');
 			$('.designSpan').addClass('mode--design');
+			$('.designBtn').removeClass('designStyle');
 		}, 1000);
 	})
 
@@ -437,11 +464,14 @@ $(document).ready(function(){
 	GlitchFx.prototype.options = {
 		// Max and Min values for the time when to start the glitch effect.
 		glitchStart: {min: 300, max: 4000},
+		// glitchStart: {min: 3000, max: 4000},
 		// Max and Min values of time that an element keeps each glitch state. 
 		// In this case we are alternating classes so this is the time that an element will have one class before it gets replaced.
 		glitchState: {min: 50, max: 600},
+		// glitchState: {min: 5000, max: 60000},
 		// Number of times the class is changed per glitch iteration.
 		glitchTotalIterations: 6
+		// glitchTotalIterations: 2
 	};
 
 	/**

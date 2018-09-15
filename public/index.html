@@ -57,8 +57,34 @@
 								<svg class="icon icon--menu-alt"><use xlink:href="#icon-menu-alt"></use></svg>
 							</button>
 						</div>
+						<div class="menu-items burger-items hidden">
+							<div class="menu menu--design">
+								<ul class="menu__inner">
+									<li class="menu__item"><a href="/index" class="menu__link" data-switch>Home</a></li>
+									<li class="menu__item"><a href="/about" class="menu__link" data-switch>About Me</a></li>
+									<li class="menu__item"><a href="/portfolio" class="menu__link" data-switch>Portfolio</a></li>
+									<li class="menu__item"><a class="menu__link" data-switch href="/assets/document/CoreySladeResume4-2018-a.pdf" download><span
+										class="resumeDownload">
+										<i class="fas fa-download"></i></span>
+									<span class="resumeDownload"> Download My Resume</span>
+									</a></li>
+									<li class="menu__item"><a href="https://github.com/Throwback74" class="menu__link" data-switch><i class="fab fa-github"></i> Find me on GitHub</a></li>
+								</ul>
+							</div>
+							<div class="menu menu--code">
+								<ul class="menu__inner">
+									<li class="menu__item"><a href="/index" class="menu__link current" data-switch>Home</a></li>
+									<li class="menu__item"><a href="/about" class="menu__link" data-switch>About Me</a></li>
+									<li class="menu__item"><a href="/portfolio" class="menu__link" data-switch>Portfolio</a></li>
+									<li class="menu__item"><a class="menu__link" data-switch href="/assets/document/CoreySladeResume4-2018-a.pdf" download>
+									<span class="resumeDownload"> Download My Resume</span>
+									</a></li>
+									<li class="menu__item"><a href="https://github.com/Throwback74" class="menu__link" data-switch>Find me on GitHub</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<div class="menu menu--design">
+					<div class="desktopMenu menu menu--design">
 						<ul class="menu__inner">
 							<li class="menu__item"><a href="/index" class="menu__link" data-switch>Home</a></li>
 							<li class="menu__item"><a href="/about" class="menu__link" data-switch>About Me</a></li>
@@ -71,7 +97,7 @@
 							<li class="menu__item"><a href="https://github.com/Throwback74" class="menu__link" data-switch><i class="fab fa-github"></i> Find me on GitHub</a></li>
 						</ul>
 					</div>
-					<div class="menu menu--code">
+					<div class="desktopMenu menu menu--code">
 						<ul class="menu__inner">
 							<li class="menu__item"><a href="/index" class="menu__link current" data-switch>Home</a></li>
 							<li class="menu__item"><a href="/about" class="menu__link" data-switch>About Me</a></li>
@@ -85,10 +111,10 @@
 					<div class="content__bottom">
 						<div id="switchDiv" class="animated tada slower switch mode mode--design">
 							<a class="tooltipped waves-effect waves-light btn-large designBtn switch__item switch__item--current" data-position="top" data-tooltip="Click Me!"><span id="designSpan" class="mode mode--design designSpan" data-switch data-glitch>Designer</span></a>
-							<a id="designSwitch" class="tooltipped waves-effect waves-light btn-large codeBtn switch__item" data-position="top" data-tooltip="Click Me!"><span class="mode mode--design" data-switch data-glitch>Coder</span></a>
+							<a id="designSwitch" class="tooltipped waves-effect waves-light btn-large codeBtn switch__item" data-position="top" data-tooltip="Click Me!"><span class="mode mode--design codeSpan" data-switch data-glitch>Coder</span></a>
 						</div>
 						<div class="link-wrap">
-							<a href="/contact" class="tooltipped contact-link mode mode--design" data-position="top" data-tooltip="Contact Me!" data-switch data-glitch><img src="/assets/img/logoTransparentNT.png" class="logoT" alt="logo"> Let's Build Something Together - Contact Me</a>
+							<a href="/contact" class="tooltipped contact-link mode mode--design" data-position="top" data-tooltip="Contact Me!" data-switch data-glitch><img src="/assets/img/logoTransparentNT.png" class="logoT" alt="logo"> Let's Build Something Together<span class="contactSpan"> - Contact Me</span></a>
 						</div>
 					</div>
 				</div><!-- /content__inner-->
