@@ -110,6 +110,9 @@ a:focus {
 	margin: 0 0 0 2em;
 	padding: 0;
 	color: #585656;
+	position: fixed;
+	top: 0;
+	right: 0;
 }
 
 .btn--menu .icon--menu-alt,
@@ -264,9 +267,10 @@ a:focus {
 }
 
 .switch {
-	position: relative;
+	position: fixed;
 	display: flex;
 	align-items: center;
+	bottom: -1px;
 }
 
 .switch__content {
@@ -283,9 +287,29 @@ a:focus {
 }
 
 .switch__item span {
-	position: relative;
+	position: fixed;
 	display: inline-block;
 	pointer-events: none;
+}
+
+.switch__item .codeSpan.mode--design {
+	left: 11.6em;
+	bottom: 1.3em;
+}
+
+.switch__item .codeSpan.mode--code {
+	left: 8.5em;
+	bottom: 0.6em;
+}
+
+.switch__item .designSpan.mode--design {
+	left: 1.6em;
+	bottom: 1.5em;
+}
+
+.switch__item .designSpan.mode--code {
+	left: 1.3em;
+	bottom: 0.8em;
 }
 
 .switch__item--current {
@@ -326,6 +350,11 @@ a:focus {
   -vendor-animation-duration: 10s;
   /* -vendor-animation-delay: 2s; */
   /* -vendor-animation-iteration-count: inherit; */
+}
+
+.btn-large {
+	/* height: 40px !important; */
+	width: 8em;
 }
 
 .btn.codeBtn {
@@ -490,9 +519,25 @@ a:focus {
 	}
 }
 @media screen and (max-width: 995px) {
-	/* .menu-items.burger-items{
-		display: flex;
-	} */
+	.switch__item .designSpan.mode--code {
+    left: 1em;
+    bottom: 0.6em;
+	}
+
+	.switch__item .designSpan.mode--design {
+    left: 1.6em;
+    bottom: 1em;
+	}
+
+	.switch__item .codeSpan.mode--design {
+    left: 11.6em;
+    bottom: 1em;
+	}
+
+	.switch__item .codeSpan.mode--code {
+    left: 8.5em;
+		bottom: 0.5em;
+	}
 
 	.desktopMenu {
 		display: none;
@@ -544,10 +589,10 @@ a:focus {
 	}
 
 	.switch__item span {
-    position: relative;
+    /* position: relative; */
     display: inline-block;
     pointer-events: none;
-		bottom: 6px;
+		/* bottom: 6px; */
 	}
 
 	.menu {
@@ -580,16 +625,21 @@ a:focus {
 
 }
 @media screen and (max-width: 550px) {
-	.switch__item .designSpan {
-		right: 1em;
+	.switch__item .designSpan.mode--design {
+    left: 1em;
+    bottom: 0.6em;
 	}
 	.switch__item .designSpan.mode--code {
-		bottom: 5px;
-		left: -14px;
+    left: 1em;
+    bottom: 0.2em;
 	}
-	.switch__item .designSpan.mode--design {
-		bottom: 3px;
-		right: 1.2em;
+	.switch__item .codeSpan.mode--code {
+		left: 7em;
+		bottom: 0.25em;
+	}
+	.switch__item .codeSpan.mode--design {
+    left: 10em;
+    bottom: 0.5em;
 	}
 	.btn-large {
     height: 30px !important;
@@ -601,12 +651,12 @@ a:focus {
     font-size: 12px !important;
     width: 6.25em;
 	}
-	.switch__item .codeSpan.mode--code {
+	/* .switch__item .codeSpan.mode--code {
 		left: -9px;
-	}
-	.switch__item .codeSpan.mode--design {
+	} */
+	/* .switch__item .codeSpan.mode--design {
 		left: -10px;
-	}
+	} */
 }
 @media screen and (max-width: 465px) {
 	.logoT {
@@ -622,6 +672,22 @@ a:focus {
 	}
 	.mode--code, .menu--code .menu__link {
     font-size: 1em;
+	}
+	.btn-large.codeBtn {
+		position: fixed;
+		bottom: 3.5em;
+	}
+	.switch__item .codeSpan.mode--design {
+    left: 1.5em;
+    bottom: 4.2em;
+	}
+	.switch__item .codeSpan.mode--code {
+    left: 1em;
+    bottom: 2.5em;
+	}
+	.switch__item .designSpan.mode--code {
+    left: 1.5em;
+    bottom: 0.2em;
 	}
 }
 /* TODO: Make Btns and Contact link responsive, add burger menu */
