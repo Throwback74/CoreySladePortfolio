@@ -355,6 +355,11 @@ a.item.fillerLink {
 	display: none;
 }
 
+.tallContentP {
+	display: inline;
+	font-family: "Playfair Display", Georgia, serif;
+}
+
 /* .container-fluid.columns.footCol {
 	-webkit-columns: 2 200px;
 	-moz-columns: 2 200px;
@@ -565,7 +570,7 @@ a.item.fillerLink {
 		/* height: 37px; */
 	}
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px), screen and (max-height: 605px){
 	.content.smallMedia {
 		display: flex;
 	}
@@ -640,13 +645,13 @@ a.item.fillerLink {
 	.contentP.shortContentP {
     display: block;
     position: relative;
-    top: 10px;
+    top: 6em;
 		right: -8px;
 		width: 85%;
 	}
-	.tallContentP {
+	/* .tallContentP {
 		display: none;
-	}
+	} */
 	.columns.aboutInner {
 		width: 64%;
 	}
@@ -668,7 +673,111 @@ a.item.fillerLink {
     margin-left: 0;
     margin-right: 0;
 	}
+	@media screen and (max-width: 520px) {
+		.contentP.shortContentP {
+			display: block;
+			position: relative;
+			top: 5em;
+			right: -8px;
+			width: 85%;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		.contentP.shortContentP {
+			display: block;
+			position: relative;
+			top: 2em;
+			right: -12px;
+			width: 85%;
+		}
+	}
+	@media screen and (min-width: 770px) {
+		/* .contentP.shortContentP {
+			display: block;
+			position: relative;
+			top: 8em;
+			right: 6em;
+			width: 85%;
+		} */
+		.contentP.shortContentP {
+			display: block;
+			position: relative;
+			top: 6.7em;
+			right: -2em;
+			width: 85%;
+		}
+		/* .contentName.shortName {
+			display: block;
+			position: relative;
+			top: 2em;
+			right: -20px;
+			width: 6em;
+			margin-bottom: 0;
+			height: 5em;
+		} */
+		.contentName.shortName {
+			display: block;
+			position: relative;
+			top: 2em;
+			right: -8em;
+			width: 6em;
+			margin-bottom: 0;
+			height: 5em;
+		}
+		.image.is-200x200 {
+			margin-right: 0;
+			margin-left: 0;
+			margin-top: 0em;
+			/* right: 34em; */
+			position: fixed;
+			left: 3em;
+			bottom: 38.8%;
+		}
+	}
+	@media screen and (min-width: 1000px) {
+		.image.is-200x200 {
+			left: 2em;
+		}
+	}
+	@media screen and (min-width: 1160px) {
+		.contentP {
+			font-family: "Playfair Display", Georgia, serif;
+			position: relative;
+			bottom: -1em;
+		}
+		.content figure img {
+			display: flex;
+			width: 160px !important;
+			height: 160px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.image.is-200x200 {
+			height: 160px;
+			width: 160px;
+			left: 2em;
+    	bottom: 30.8%;
+		}
 }
+}
+/* @media screen and (max-height: 670px), screen and (max-width: 520px){
+	.contentP.shortContentP {
+    display: block;
+    position: relative;
+    top: 5em;
+		right: -8px;
+		width: 85%;
+	}
+}
+@media screen and (max-height: 670px), screen and (max-width: 420px){
+	.contentP.shortContentP {
+    display: block;
+    position: relative;
+    top: 2em;
+    right: -12px;
+		width: 85%;
+	}
+} */
 @media screen and (max-height: 610px){
 	.triggerShort{
 		bottom: -30px;
@@ -677,5 +786,15 @@ a.item.fillerLink {
 @media screen and (max-height: 580px){
 	.triggerShort{
 		bottom: -54px;
+	}
+}
+@media screen and (min-height: 605px), screen and (min-width: 400px) {
+	.tallContentP {
+		display: inline;
+	}
+}
+@media screen and (max-height: 604px), screen and (max-width: 399px) {
+	.tallContentP {
+		display: none;
 	}
 }
