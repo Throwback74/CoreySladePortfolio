@@ -882,3 +882,15 @@ a.item.fillerLink {
 		}
 	}
 }
+@media screen and (max-height: 605px) {
+	@media screen and (min-width: 1000px) {
+		.image.is-200x200 {
+			width: 160px;
+			height: 160px;
+		}
+		.content figure img {
+			width: 160px !important;
+			height: 160px;
+		}
+	}
+}
