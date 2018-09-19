@@ -259,6 +259,10 @@ a:focus {
 	color: #fff;
 }
 
+.desktopMenu-items {
+	width: 100%;
+}
+
 .content__bottom {
 	display: flex;
 	align-items: center;
@@ -486,11 +490,11 @@ a:focus {
 	display: none;
 }
 
-@media screen and (max-height: 38.5em) {
+/* @media screen and (max-height: 38.5em) {
 	.menu {
 		text-align: left;
 	}
-}
+} */
 
 @media screen and (max-width: 40em) {
 	.content__top {
@@ -539,7 +543,7 @@ a:focus {
 		bottom: 0.5em;
 	}
 
-	.desktopMenu {
+	#desktopMenu {
 		display: none;
 	}
 
@@ -690,4 +694,3 @@ a:focus {
     bottom: 0.2em;
 	}
 }
-/* TODO: Make Btns and Contact link responsive, add burger menu */

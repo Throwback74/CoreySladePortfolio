@@ -256,7 +256,8 @@ a:focus {
 
 .slideshow__deco {
 	grid-area: slide;
-	background: var(--color-deco);
+	/* background: var(--color-deco); */
+	background-color: rgb(35, 35, 35);
 	width: 100%;
 	height: 80%;
 	align-self: center;
@@ -420,6 +421,7 @@ a:focus {
 .content__title {
 	margin: 0.5rem 0;
 	font-size: 2rem;
+	color: #f1f1f1;
 }
 
 .content__subtitle {
@@ -572,7 +574,8 @@ a:focus {
 
 	.slideshow__deco {
 		grid-area: slide;
-    background: var(--color-deco);
+		/* background: var(--color-deco); */
+		background-color: rgb(35, 35, 35);
     width: 100%;
     height: 70%;
     align-self: center;
@@ -618,7 +621,8 @@ a:focus {
 
 	.slideshow__deco {
 		grid-area: slide;
-    background: var(--color-deco);
+		/* background: var(--color-deco); */
+		background-color: rgb(35, 35, 35);
     width: 100%;
     height: 70%;
     align-self: center;
@@ -1194,4 +1198,24 @@ a:focus {
 
 @media (min-height: 500px) and (min-width: 580px) {
 
+}
+@media screen and (min-height: 567px) {
+	@media screen and (min-width: 1275px) {
+		.content__number {
+			position: absolute;
+			bottom: 4vh;
+			right: -5vh;
+			font-size: 2rem;
+		}
+	}
+}
+@media screen and (min-height: 800px) {
+	@media screen and (min-width: 980px) {
+		.content__number {
+			position: absolute;
+			bottom: 4vh;
+			right: -5vh;
+			font-size: 2rem;
+		}
+	}
 }
