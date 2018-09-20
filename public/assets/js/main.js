@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	$('.tooltipped').tooltip();
+
 
 // 	$(window).resize(function(){     
 // 		if ($('.desktopMenu').is(':hidden')){
@@ -18,88 +20,94 @@ $(document).ready(function () {
 // 		}
 // 	});
 
-// 	$(window).resize(function(){
-// 		if ($(window).width() <= 320) {
-// 					// is mobile device
-// 		}
-// });
+mediaCheck({
+	media: '(max-width: 995px)',
+	entry: function() {
+		console.log('starting 995');
+		$('.desktopMenu').addClass('burger-items');
+		$('.desktopMenu').addClass('hidden');
+	},
+	exit: function() {
+		console.log('leaving 995');
+		$('.desktopMenu').removeClass('burger-items');
+		$('.desktopMenu').removeClass('hidden');
+	},
+	both: function() {
+		console.log('changing state');
+	}
+});
 
 	$('.btn--menu').click(function(){
 		$('.title__inner').toggleClass('burgerOpen');
 		$('.burger-items').toggleClass('hidden');
 	});
 
-	//Bulma navbar "burger" function for mobile
-	$('.navbar-burger').click(function() {
-			$('#navbarMenuHeroA, .navbar-burger').toggleClass('is-active');
+
+
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var elems = document.querySelectorAll('.tap-target');
+		// var instances = M.TapTarget.init(elems, options);
 	});
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-	var elems = document.querySelectorAll('.tap-target');
-	// var instances = M.TapTarget.init(elems, options);
-});
-
-$(document).ready(function(){
+// $(document).ready(function(){
 	// $('.tap-target').tapTarget();
-	$('.tap-target').tapTarget('open');
+	// $('.tap-target').tapTarget('open');
 	
-	setInterval(function(){
-		$('.tap-target').tapTarget('close');
-	}, 5000);
+	// setInterval(function(){
+	// 	$('.tap-target').tapTarget('close');
+	// }, 5000);
 
 
-	var designBtnGlitch = function() {
-		// if($('.designSpan').hasClass('mode--code')) {
-			setInterval(function() {
-				$('.designSpan').removeClass('mode--code');
-				$('.designSpan').addClass('mode--design');
-			}, 1000);
-			setInterval(function() {
-				$('.designSpan').removeClass('mode--design');
-				$('.designSpan').addClass('mode--code');
-			}, 800);
-			setInterval(function() {
-				$('.designSpan').removeClass('mode--code');
-				$('.designSpan').addClass('mode--design');
-			}, 600);
-			setInterval(function() {
-				$('.designSpan').removeClass('mode--design');
-				$('.designSpan').addClass('mode--code');
-			}, 1200);
-			setInterval(function() {
-				$('.designSpan').removeClass('mode--code');
-				$('.designSpan').addClass('mode--design');
-			}, 500);
-			setInterval(function() {
-				$('.designSpan').removeClass('mode--design');
-				$('.designSpan').addClass('mode--code');
-			}, 700);
-		// }
-	}
+	// var designBtnGlitch = function() {
+	// 	// if($('.designSpan').hasClass('mode--code')) {
+	// 		setInterval(function() {
+	// 			$('.designSpan').removeClass('mode--code');
+	// 			$('.designSpan').addClass('mode--design');
+	// 		}, 1000);
+	// 		setInterval(function() {
+	// 			$('.designSpan').removeClass('mode--design');
+	// 			$('.designSpan').addClass('mode--code');
+	// 		}, 800);
+	// 		setInterval(function() {
+	// 			$('.designSpan').removeClass('mode--code');
+	// 			$('.designSpan').addClass('mode--design');
+	// 		}, 600);
+	// 		setInterval(function() {
+	// 			$('.designSpan').removeClass('mode--design');
+	// 			$('.designSpan').addClass('mode--code');
+	// 		}, 1200);
+	// 		setInterval(function() {
+	// 			$('.designSpan').removeClass('mode--code');
+	// 			$('.designSpan').addClass('mode--design');
+	// 		}, 500);
+	// 		setInterval(function() {
+	// 			$('.designSpan').removeClass('mode--design');
+	// 			$('.designSpan').addClass('mode--code');
+	// 		}, 700);
+	// 	// }
+	// }
 
-	$('.codeBtn').click(function() {
-		setInterval(function() {
-			$('.designSpan').removeClass('mode--design');
-			$('.designSpan').addClass('mode--code');
-			$('.designBtn').addClass('designStyle');
-		}, 1000);
-		designBtnGlitch();
-	});
-	$('.designBtn').click(function() {
-		setInterval(function() {
-			$('.designSpan').removeClass('mode--code');
-			$('.designSpan').addClass('mode--design');
-			$('.designBtn').removeClass('designStyle');
-		}, 1000);
-	})
+	// $('.codeBtn').click(function() {
+	// 	setInterval(function() {
+	// 		$('.designSpan').removeClass('mode--design');
+	// 		$('.designSpan').addClass('mode--code');
+	// 		$('.designBtn').addClass('designStyle');
+	// 	}, 1000);
+	// 	designBtnGlitch();
+	// });
+	// $('.designBtn').click(function() {
+	// 	setInterval(function() {
+	// 		$('.designSpan').removeClass('mode--code');
+	// 		$('.designSpan').addClass('mode--design');
+	// 		$('.designBtn').removeClass('designStyle');
+	// 	}, 1000);
+	// })
 
-});
 
-$(document).ready(function(){
-	$('.tooltipped').tooltip();
+
 	// $('.tap-target').tapTarget();
-});
+// });
 /**
  * main.js
  * http://www.codrops.com

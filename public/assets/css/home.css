@@ -251,9 +251,9 @@ a:focus {
 	display: none;
 }
 
-.menu__link {
+/* .menu__link {
 	display: inline-block;
-}
+} */
 
 .menu--code .menu__link:hover {
 	color: #fff;
@@ -539,9 +539,9 @@ a:focus {
 		bottom: 0.5em;
 	}
 
-	.desktopMenu {
+	/* .desktopMenu {
 		display: none;
-	}
+	} */
 
 	.btn--menu .icon--menu-alt,
 	.btn--menu.mode--code .icon--menu {

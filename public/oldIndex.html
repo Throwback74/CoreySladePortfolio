@@ -4,17 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Corey's Portfolio | Home</title>
-		<meta name="description" content="A Full Stack MERN Developer's Portfolio page" />
-		<meta name="keywords" content="template, page layout, concept, developer, designer, portfolio, effect, animation, css, javascript, full stack, MERN, jquery, front end, back end, Corey Slade" />
+		<meta name="description" content="A page layout concept with a developer/designer theme and a special effect" />
+		<meta name="keywords" content="template, page layout, concept, developer, designer, portfolio, effect, animation, css, javascript" />
 		<link rel="shortcut icon" href="/assets/img/favicon.ico">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,400,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Rokkitt:100,400,900" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		<link rel="stylesheet"
-  	href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/home.css" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/pieces.css" />
 		<script>document.documentElement.className = 'js';</script>
@@ -58,57 +55,46 @@
 							</button>
 						</div>
 					</div>
-						<div class="desktopMenu menu menu--design">
-							<ul class="menu__inner">
-								<li class="menu__item"><a href="/index" class="menu__link" data-switch>Home</a></li>
-								<li class="menu__item"><a href="/about" class="menu__link" data-switch>About Me</a></li>
-								<li class="menu__item"><a href="/portfolio" class="menu__link" data-switch>Portfolio</a></li>
-								<li class="menu__item"><a class="menu__link" data-switch href="/assets/document/CoreySladeResume.pdf" download><span
-									class="resumeDownload">
-									<i class="fas fa-download"></i></span>
-								<span class="resumeDownload"> Download My Resume</span>
-								</a></li>
-								<li class="menu__item"><a href="https://github.com/Throwback74" class="menu__link" data-switch><i class="fab fa-github"></i> Find me on GitHub</a></li>
-							</ul>
-						</div>
-						<div class="desktopMenu menu menu--code">
-							<ul class="menu__inner">
-								<li class="menu__item"><a href="/index" class="menu__link current" data-switch>Home</a></li>
-								<li class="menu__item"><a href="/about" class="menu__link" data-switch>About Me</a></li>
-								<li class="menu__item"><a href="/portfolio" class="menu__link" data-switch>Portfolio</a></li>
-								<li class="menu__item"><a class="menu__link" data-switch href="/assets/document/CoreySladeResume.pdf" download>
-								<span class="resumeDownload"> Download My Resume</span>
-								</a></li>
-								<li class="menu__item"><a href="https://github.com/Throwback74" class="menu__link" data-switch>Find me on GitHub</a></li>
-							</ul>
-						</div>
+					<div class="menu menu--design">
+						<ul class="menu__inner">
+							<li class="menu__item"><a href="/index.html" class="menu__link" data-switch>Home</a></li>
+							<li class="menu__item"><a href="/about.html" class="menu__link" data-switch>About Me</a></li>
+							<li class="menu__item"><a href="/portfolio.html" class="menu__link" data-switch>Portfolio</a></li>
+							<li class="menu__item"><a class="menu__link" data-switch href="/assets/document/CoreySladeResume4-2018-a.pdf" download><span
+								class="resumeDownload">
+								<i class="fas fa-download"></i></span>
+							<span class="resumeDownload"> Download My Resume</span>
+							</a></li>
+							<li class="menu__item"><a href="https://github.com/Throwback74" class="menu__link" data-switch><i class="fab fa-github"></i> Find me on GitHub</a></li>
+						</ul>
+					</div>
+					<div class="menu menu--code">
+						<ul class="menu__inner">
+							<li class="menu__item"><a href="/index.html" class="menu__link current" data-switch>Home</a></li>
+							<li class="menu__item"><a href="/about.html" class="menu__link" data-switch>About Me</a></li>
+							<li class="menu__item"><a href="/portfolio.html" class="menu__link" data-switch>Portfolio</a></li>
+							<li class="menu__item"><a class="menu__link" data-switch href="/assets/document/CoreySladeResume4-2018-a.pdf" download>
+							<span class="resumeDownload"> Download My Resume</span>
+							</a></li>
+							<li class="menu__item"><a href="https://github.com/Throwback74" class="menu__link" data-switch>Find me on GitHub</a></li>
+						</ul>
+					</div>
 					<div class="content__bottom">
-						<div id="switchDiv" class="animated tada slower switch mode mode--design">
-							<a class="tooltipped waves-effect waves-light btn-large designBtn switch__item switch__item--current" data-position="top" data-tooltip="Click Me!"><span id="designSpan" class="mode mode--design designSpan" data-switch data-glitch>Designer</span></a>
-							<a id="designSwitch" class="tooltipped waves-effect waves-light btn-large codeBtn switch__item" data-position="top" data-tooltip="Click Me!"><span class="mode mode--design codeSpan" data-switch data-glitch>Coder</span></a>
+						<div class="switch mode mode--design">
+							<a class="switch__item switch__item--current">Designer</a>
+							<a class="switch__item"><span class="mode mode--design" data-switch data-glitch>Coder</span></a>
 						</div>
 						<div class="link-wrap">
-							<a href="/contact" class="tooltipped contact-link mode mode--design" data-position="top" data-tooltip="Contact Me!" data-switch data-glitch><img src="/assets/img/logoTransparentNT.png" class="logoT" alt="logo"> Let's Build Something Together<span class="contactSpan"> - Contact Me</span></a>
+							<a href="/contact" class="contact-link mode mode--design" data-switch data-glitch><img src="/assets/img/logoTransparentNT.png" class="logoT" alt="logo"> Let's Build Something Together</a>
 						</div>
 					</div>
 				</div><!-- /content__inner-->
 			</div><!-- /content -->
-			<!-- Tap Target Structure -->
-			<!-- <div class="tap-target teal lighten-3" data-activates="designSwitch">
-				<div class="tap-target-content">
-						<h5>Click Here!</h5>
-						<p>See my other half</p>
-						<a href="#!" onclick="$('.tap-target').tapTarget('close')">Dismiss</a>
-				</div>
-			</div> -->
 			<div class="loading"></div>
 		</main>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 		<script src="/assets/js/imagesloaded.pkgd.min.js"></script>
 		<script src="/assets/js/anime.min.js"></script>
 		<script src="/assets/js/charming.min.js"></script>
-		<script src="/assets/js/mediaCheck-min.js"></script>
 		<script src="/assets/js/main.js"></script>
 	</body>
 </html>
