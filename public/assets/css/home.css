@@ -524,7 +524,16 @@ a:focus {
 		padding: 1em 1em 0;
 	}
 }
-
+/* @media screen and (max-width: 465px) {
+	.themeDiv {
+		bottom: 7em;
+    left: 0.6em;
+	}
+	.themeDiv.mode--code {
+    bottom: 7em;
+    left: 0.6em;
+	}
+} */
 @media screen and (max-width: 1090px) {
 	.menu {
 		font-size: 1.5em;
@@ -669,12 +678,14 @@ a:focus {
     font-size: 12px !important;
     width: 6.25em;
 	}
-	/* .switch__item .codeSpan.mode--code {
-		left: -9px;
-	} */
-	/* .switch__item .codeSpan.mode--design {
-		left: -10px;
-	} */
+	.themeDiv {
+		bottom: 4em;
+    left: 4em;
+	}
+	.themeDiv.mode--code {
+    bottom: 3em;
+    left: 3em;
+	}
 }
 @media screen and (max-width: 465px) {
 	.logoT {
@@ -707,5 +718,12 @@ a:focus {
     left: 1.5em;
     bottom: 0.2em;
 	}
+	.themeDiv {
+		bottom: 7em;
+    left: 0.6em;
+	}
+	.themeDiv.mode--code {
+    bottom: 7em;
+    left: 0.6em;
+	}
 }
-/* TODO: Make Btns and Contact link responsive, add burger menu */
