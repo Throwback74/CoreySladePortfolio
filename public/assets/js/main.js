@@ -1,25 +1,6 @@
 $(document).ready(function () {
 	$('.tooltipped').tooltip();
 
-
-// 	$(window).resize(function(){     
-// 		if ($('.desktopMenu').is(':hidden')){
-// 			console.log('Menu hidden btn size triggered');
-// 			// is mobile/tablet device
-// 			$('.designBtn').removeClass('btn-large');
-// 			$('.designBtn').addClass('btn');
-// 			$('.codeBtn').removeClass('btn-large');
-// 			$('.codeBtn').addClass('btn');
-// 		}else if($('.desktopMenu').is(':visible')) {
-// 			$('.designBtn').removeClass('btn');
-// 			$('.designBtn').addClass('btn-large');
-// 			$('.codeBtn').removeClass('btn');
-// 			$('.codeBtn').addClass('btn-large');
-// 		}else{
-// 			console.log('Menu NOT hidden btn size NOT triggered');
-// 		}
-// 	});
-
 mediaCheck({
 	media: '(max-width: 995px)',
 	entry: function() {
@@ -42,72 +23,12 @@ mediaCheck({
 		$('.burger-items').toggleClass('hidden');
 	});
 
-
-
-
 	document.addEventListener('DOMContentLoaded', function() {
 		var elems = document.querySelectorAll('.tap-target');
 		// var instances = M.TapTarget.init(elems, options);
 	});
 });
-// $(document).ready(function(){
-	// $('.tap-target').tapTarget();
-	// $('.tap-target').tapTarget('open');
-	
-	// setInterval(function(){
-	// 	$('.tap-target').tapTarget('close');
-	// }, 5000);
 
-
-	// var designBtnGlitch = function() {
-	// 	// if($('.designSpan').hasClass('mode--code')) {
-	// 		setInterval(function() {
-	// 			$('.designSpan').removeClass('mode--code');
-	// 			$('.designSpan').addClass('mode--design');
-	// 		}, 1000);
-	// 		setInterval(function() {
-	// 			$('.designSpan').removeClass('mode--design');
-	// 			$('.designSpan').addClass('mode--code');
-	// 		}, 800);
-	// 		setInterval(function() {
-	// 			$('.designSpan').removeClass('mode--code');
-	// 			$('.designSpan').addClass('mode--design');
-	// 		}, 600);
-	// 		setInterval(function() {
-	// 			$('.designSpan').removeClass('mode--design');
-	// 			$('.designSpan').addClass('mode--code');
-	// 		}, 1200);
-	// 		setInterval(function() {
-	// 			$('.designSpan').removeClass('mode--code');
-	// 			$('.designSpan').addClass('mode--design');
-	// 		}, 500);
-	// 		setInterval(function() {
-	// 			$('.designSpan').removeClass('mode--design');
-	// 			$('.designSpan').addClass('mode--code');
-	// 		}, 700);
-	// 	// }
-	// }
-
-	// $('.codeBtn').click(function() {
-	// 	setInterval(function() {
-	// 		$('.designSpan').removeClass('mode--design');
-	// 		$('.designSpan').addClass('mode--code');
-	// 		$('.designBtn').addClass('designStyle');
-	// 	}, 1000);
-	// 	designBtnGlitch();
-	// });
-	// $('.designBtn').click(function() {
-	// 	setInterval(function() {
-	// 		$('.designSpan').removeClass('mode--code');
-	// 		$('.designSpan').addClass('mode--design');
-	// 		$('.designBtn').removeClass('designStyle');
-	// 	}, 1000);
-	// })
-
-
-
-	// $('.tap-target').tapTarget();
-// });
 /**
  * main.js
  * http://www.codrops.com
@@ -667,11 +588,18 @@ mediaCheck({
 		
 		// mode: design||code.
 		mode = ev.target === DOM.switchModeCtrls.code ? 'code' : 'design';
+		var labelDiv = document.querySelector('.themeDiv');
+		var label = document.querySelector('.themeLabel');
+
+		// $(labelDiv).toggleClass('mode--design');
+		$(labelDiv).toggleClass('mode--code');
+		// $(label).toggleClass('mode--design');
+		// $(label).toggleClass('mode--code');
 
 		switchOverlay();
 
 		if( mode === 'code' ) {
-			disablePageFx = true;  //changing true to false to test glitch
+			disablePageFx = true;
 			pm.removeTilt();
 			pm.stopLoopFx();
 			gfx.stopGlitch();

@@ -273,6 +273,24 @@ a:focus {
 	bottom: -1px;
 }
 
+.themeDiv {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	bottom: 5em;
+	left: 6em;
+	color: #6dcc9e;
+}
+
+.themeDiv.mode--code {
+	bottom: 4em;
+	left: 4em;
+}
+
+.themeDiv.mode--code > .themeLabel {
+	color: #e04643;
+}
+
 .switch__content {
 	display: flex;
 }
