@@ -34,11 +34,9 @@ setInterval(function() {
 
 function hasScrolled() {
     var st = $(this).scrollTop();
-    
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
-    
     // If they scrolled down and are past the title, add class .title-up.
     // This is necessary so you never see what is "behind" the title.
     if (st > lastScrollTop && st > titleHeight){
@@ -51,10 +49,6 @@ function hasScrolled() {
             $('#deviconTitle').removeClass('title-up').addClass('title-down');
         }
     }
-    
     lastScrollTop = st;
 }
-
-
-
 });
